@@ -1,0 +1,30 @@
+C Program to Find Cycle in a Linked List
+
+-Write a C program to detect a loop in a linked list
+-How to check whether a linked list contains a cycle
+
+Given a Singly list, we have to find whether given linked list contains a cycle. 
+A loop in a linked list means there is no tail node in a linked list, 
+every node of link list is pointing to some other node of linked list.
+
+Method 1 : Fast and Slow pointer method.
+
+Algorithm to detect cycle in a linked list
+
+1.  Let "head" be the head pointer of given linked list.
+    Let, "slow" and "fast" be two node pointers pointing to the head node of linked list.
+2.  In every iteration, the "slow" pointer moves ahead by one node(slow = slow->next;) whereas "fast" pointer moves two nodes at a time(fast = fast->next->next;).
+3.  If linked list contains a loop, "slow" and "fast" pointers will eventually meet at the same node, thus indicating that the linked list contains a loop.
+4.  If pointers do not meet then linked list doesn’t have loop.
+        
+    This algorithm is known as Floyd’s Cycle-Finding Algorithm
+
+
+
+Method 2 : Using a Hash Table.
+
+Algorithm to detect cycle in a linked list
+
+1.Traverse the given linked list and put the address of each node in a Hash table.
+2.If you reach a node whose next pointer is NULL, then given linked list doesn't contain s cycle.
+3.If address of any node already exist in Hash table, it means we are visiting this node again and linked list contains a cycle.
