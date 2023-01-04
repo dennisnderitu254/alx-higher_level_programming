@@ -1,3 +1,5 @@
-print("I")
-print("Love")
-print("Python")
+a = "SCHL"
+b = "SCHL"
+del a
+del b
+c = "SCHL"
