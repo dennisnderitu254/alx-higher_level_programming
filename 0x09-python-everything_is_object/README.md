@@ -8,7 +8,7 @@ Tasks
 
 mandatory
 
-Score: 50.00% (Checks completed: 100.00%)
+Score: 100.00% (Checks completed: 100.00%)
 
 What function would you use to print the type of an object?
 
@@ -24,7 +24,7 @@ Write the name of the function in the file, without `()`.
 
 mandatory
 
-Score: 50.00% (Checks completed: 100.00%)
+Score: 100.00% (Checks completed: 100.00%)
 
 How do you get the variable identifier (which is the memory address in the CPython implementation)?
 
@@ -40,7 +40,7 @@ Write the name of the function in the file, without `()`.
 
 mandatory
 
-Score: 50.00% (Checks completed: 100.00%)
+Score: 100.00% (Checks completed: 100.00%)
 
 In the following code, do `a` and `b` point to the same object? Answer with `Yes` or `No`.
 
@@ -60,7 +60,7 @@ In the following code, do `a` and `b` point to the same object? Answer with `Yes
 
 mandatory
 
-Score: 0.00% (Checks completed: 0.00%)
+Score: 100.00% (Checks completed: 0.00%)
 
 In the following code, do `a` and `b` point to the same object? Answer with `Yes` or `No`.
 
@@ -80,7 +80,7 @@ In the following code, do `a` and `b` point to the same object? Answer with `Yes
 
 mandatory
 
-Score: 0.00% (Checks completed: 0.00%)
+Score: 100.00% (Checks completed: 0.00%)
 
 In the following code, do `a` and `b` point to the same object? Answer with `Yes` or `No`.
 
@@ -100,7 +100,7 @@ In the following code, do `a` and `b` point to the same object? Answer with `Yes
 
 mandatory
 
-Score: 0.00% (Checks completed: 0.00%)
+Score: 100.00% (Checks completed: 0.00%)
 
 In the following code, do `a` and `b` point to the same object? Answer with `Yes` or `No`.
 
@@ -120,7 +120,7 @@ In the following code, do `a` and `b` point to the same object? Answer with `Yes
 
 mandatory
 
-Score: 0.00% (Checks completed: 0.00%)
+Score: 100.00% (Checks completed: 0.00%)
 
 What do these 3 lines print?
 
@@ -141,7 +141,7 @@ What do these 3 lines print?
 
 mandatory
 
-Score: 0.00% (Checks completed: 0.00%)
+Score: 100.00% (Checks completed: 0.00%)
 
 What do these 3 lines print?
 
@@ -162,7 +162,7 @@ What do these 3 lines print?
 
 mandatory
 
-Score: 0.00% (Checks completed: 0.00%)
+Score: 100.00% (Checks completed: 0.00%)
 
 What do these 3 lines print?
 
@@ -183,7 +183,7 @@ What do these 3 lines print?
 
 mandatory
 
-Score: 0.00% (Checks completed: 0.00%)
+Score: 100.00% (Checks completed: 0.00%)
 
 What do these 3 lines print?
 
@@ -204,7 +204,7 @@ What do these 3 lines print?
 
 mandatory
 
-Score: 0.00% (Checks completed: 0.00%)
+Score: 100.00% (Checks completed: 0.00%)
 
 What do these 3 lines print?
 
@@ -225,7 +225,7 @@ What do these 3 lines print?
 
 mandatory
 
-Score: 0.00% (Checks completed: 0.00%)
+Score: 100.00% (Checks completed: 0.00%)
 
 What do these 3 lines print?
 
@@ -246,7 +246,7 @@ What do these 3 lines print?
 
 mandatory
 
-Score: 0.00% (Checks completed: 0.00%)
+Score: 100.00% (Checks completed: 0.00%)
 
 What do these 3 lines print?
 
@@ -267,7 +267,7 @@ What do these 3 lines print?
 
 mandatory
 
-Score: 0.00% (Checks completed: 0.00%)
+Score: 100.00% (Checks completed: 0.00%)
 
 What do these 3 lines print?
 
@@ -288,7 +288,7 @@ What do these 3 lines print?
 
 mandatory
 
-Score: 0.00% (Checks completed: 0.00%)
+Score: 100.00% (Checks completed: 0.00%)
 
 What does this script print?
 
@@ -310,7 +310,7 @@ print(l2)
 
 mandatory
 
-Score: 0.00% (Checks completed: 0.00%)
+Score: 100.00% (Checks completed: 0.00%)
 
 What does this script print?
 
@@ -332,7 +332,7 @@ print(l2)
 
 mandatory
 
-Score: 0.00% (Checks completed: 0.00%)
+Score: 100.00% (Checks completed: 0.00%)
 
 What does this script print?
 
@@ -356,7 +356,7 @@ print(a)
 
 mandatory
 
-Score: 0.00% (Checks completed: 0.00%)
+Score: 100.00% (Checks completed: 0.00%)
 
 What does this script print?
 
@@ -380,7 +380,7 @@ print(l)
 
 mandatory
 
-Score: 0.00% (Checks completed: 0.00%)
+Score: 100.00% (Checks completed: 0.00%)
 
 What does this script print?
 
@@ -405,7 +405,7 @@ print(l1)
 
 mandatory
 
-Score: 0.00% (Checks completed: 0.00%)
+Score: 100.00% (Checks completed: 0.00%)
 
 Write a function `def copy_list(l):` that returns a **copy** of a list.
 
@@ -453,7 +453,7 @@ guillaume@ubuntu:~/0x09$
 
 mandatory
 
-Score: 0.00% (Checks completed: 0.00%)
+Score: 100.00% (Checks completed: 0.00%)
 
 ```
 a = ()
@@ -472,7 +472,7 @@ Is `a` a tuple? Answer with `Yes` or `No`.
 
 mandatory
 
-Score: 0.00% (Checks completed: 0.00%)
+Score: 100.00% (Checks completed: 0.00%)
 
 ```
 a = (1, 2)
@@ -491,7 +491,7 @@ Is `a` a tuple? Answer with `Yes` or `No`.
 
 mandatory
 
-Score: 0.00% (Checks completed: 0.00%)
+Score: 100.00% (Checks completed: 0.00%)
 
 ```
 a = (1)
@@ -510,7 +510,7 @@ Is `a` a tuple? Answer with `Yes` or `No`.
 
 mandatory
 
-Score: 0.00% (Checks completed: 0.00%)
+Score: 100.00% (Checks completed: 0.00%)
 
 ```
 a = (1, )
@@ -529,7 +529,7 @@ Is `a` a tuple? Answer with `Yes` or `No`.
 
 mandatory
 
-Score: 0.00% (Checks completed: 0.00%)
+Score: 100.00% (Checks completed: 0.00%)
 
 What does this script print?
 
@@ -550,7 +550,7 @@ a is b
 
 mandatory
 
-Score: 0.00% (Checks completed: 0.00%)
+Score: 100.00% (Checks completed: 0.00%)
 
 What does this script print?
 
@@ -571,7 +571,7 @@ a is b
 
 mandatory
 
-Score: 0.00% (Checks completed: 0.00%)
+Score: 100.00% (Checks completed: 0.00%)
 
 What does this script print?
 
@@ -592,7 +592,7 @@ a is b
 
 mandatory
 
-Score: 0.00% (Checks completed: 0.00%)
+Score: 100.00% (Checks completed: 0.00%)
 
 ```
 >>> id(a)
@@ -616,7 +616,7 @@ Will the last line of this script print `139926795932424`? Answer with `Yes` or 
 
 mandatory
 
-Score: 0.00% (Checks completed: 0.00%)
+Score: 100.00% (Checks completed: 0.00%)
 
 ```
 >>> a
@@ -640,7 +640,7 @@ Will the last line of this script print `139926795932424`? Answer with `Yes` or 
 
 #advanced
 
-Score: 0.00% (Checks completed: 0.00%)
+Score: 100.00% (Checks completed: 0.00%)
 
 Write a function `magic_string()` that returns a string "BestSchool" n times the number of the iteration (see code):
 
@@ -685,7 +685,7 @@ guillaume@ubuntu:~/0x09$
 
 #advanced
 
-Score: 0.00% (Checks completed: 0.00%)
+Score: 100.00% (Checks completed: 0.00%)
 
 Write a class `LockedClass` with no class or object attribute, that prevents the user from dynamically creating new instance attributes, except if the new instance attribute is called `first_name`.
 
@@ -721,7 +721,7 @@ guillaume@ubuntu:~/0x09$
 
 #advanced
 
-Score: 0.00% (Checks completed: 0.00%)
+Score: 100.00% (Checks completed: 0.00%)
 
 ```
 julien@ubuntu:/python3$ cat int.py
@@ -746,7 +746,7 @@ Assuming we are using a CPython implementation of Python3 with default options/c
 
 #advanced
 
-Score: 0.00% (Checks completed: 0.00%)
+Score: 100.00% (Checks completed: 0.00%)
 
 ```
 julien@ubuntu:/python3$ cat int.py
@@ -777,7 +777,7 @@ Assuming we are using a CPython implementation of Python3 with default options/c
 
 #advanced
 
-Score: 0.00% (Checks completed: 0.00%)
+Score: 100.00% (Checks completed: 0.00%)
 
 ```
 julien@twix:/tmp/so$ cat int.py
@@ -807,7 +807,7 @@ Hint: `NSMALLPOSINTS`, `NSMALLNEGINTS`
 
 #advanced
 
-Score: 0.00% (Checks completed: 0.00%)
+Score: 100.00% (Checks completed: 0.00%)
 
 ```
 guillaume@ubuntu:/python3$ cat string.py
