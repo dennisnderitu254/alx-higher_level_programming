@@ -52,9 +52,9 @@ No test cases needed
 
 Repo:
 
-GitHub repository: `alx-higher_level_programming`
-Directory: `0x0A-python-inheritance`
-File: `0-lookup.py`
+- GitHub repository: `alx-higher_level_programming`
+- Directory: `0x0A-python-inheritance`
+- File: `0-lookup.py`
 
 
 * **0. Lookup**
