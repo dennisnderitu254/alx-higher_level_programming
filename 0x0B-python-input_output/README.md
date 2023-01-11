@@ -351,3 +351,239 @@ Repo:
 - Directory: `0x0B-python-input_output`
 - File: `6-load_from_json_file.py`
 
+### 7. Load, add, save
+
+Write a script that adds all arguments to a Python list, and then save them to a file:
+
+- You must use your function `save_to_json_file` from `5-save_to_json_file.py`
+- You must use your function `load_from_json_file` from `6-load_from_json_file.py`
+- The list must be saved as a JSON representation in a file named `add_item.json`
+- If the file doesn’t exist, it should be created
+- You don’t need to manage file permissions / exceptions.
+
+```
+guillaume@ubuntu:~/0x0B$ cat add_item.json
+cat: add_item.json: No such file or directory
+guillaume@ubuntu:~/0x0B$ ./7-add_item.py
+guillaume@ubuntu:~/0x0B$ cat add_item.json ; echo ""
+[]
+guillaume@ubuntu:~/0x0B$ ./7-add_item.py Best School
+guillaume@ubuntu:~/0x0B$ cat add_item.json ; echo ""
+["Best", "School"]
+guillaume@ubuntu:~/0x0B$ ./7-add_item.py 89 Python C
+guillaume@ubuntu:~/0x0B$ cat add_item.json ; echo ""
+["Best", "School", "89", "Python", "C"]
+guillaume@ubuntu:~/0x0B$ 
+
+```
+
+No test cases needed
+
+Repo:
+
+GitHub repository: `alx-higher_level_programming`
+Directory: `0x0B-python-input_output`
+File: `7-add_item.py`
+
+### 8. Class to JSON
+
+Write a function that returns the dictionary description with simple data structure (list, dictionary, string, integer and boolean) for JSON serialization of an object:
+
+- Prototype: `def class_to_json(obj):`
+- `obj` is an instance of a Class
+- All attributes of the `obj` Class are serializable: list, dictionary, string, integer and boolean
+- You are not allowed to import any module
+
+```
+guillaume@ubuntu:~/0x0B$ cat 8-my_class.py 
+#!/usr/bin/python3
+""" My class module
+"""
+
+class MyClass:
+    """ My class
+    """
+
+    def __init__(self, name):
+        self.name = name
+        self.number = 0
+
+    def __str__(self):
+        return "[MyClass] {} - {:d}".format(self.name, self.number)
+
+guillaume@ubuntu:~/0x0B$ cat 8-main.py 
+#!/usr/bin/python3
+MyClass = __import__('8-my_class').MyClass
+class_to_json = __import__('8-class_to_json').class_to_json
+
+m = MyClass("John")
+m.number = 89
+print(type(m))
+print(m)
+
+mj = class_to_json(m)
+print(type(mj))
+print(mj)
+
+guillaume@ubuntu:~/0x0B$ ./8-main.py 
+<class '8-my_class.MyClass'>
+[MyClass] John - 89
+<class 'dict'>
+{'name': 'John', 'number': 89}
+guillaume@ubuntu:~/0x0B$ 
+guillaume@ubuntu:~/0x0B$ cat 8-my_class_2.py 
+#!/usr/bin/python3
+""" My class module
+"""
+
+class MyClass:
+    """ My class
+    """
+
+    score = 0
+
+    def __init__(self, name, number = 4):
+        self.__name = name
+        self.number = number
+        self.is_team_red = (self.number % 2) == 0
+
+    def win(self):
+        self.score += 1
+
+    def lose(self):
+        self.score -= 1
+
+    def __str__(self):
+        return "[MyClass] {} - {:d} => {:d}".format(self.__name, self.number, self.score)
+
+guillaume@ubuntu:~/0x0B$ cat 8-main_2.py 
+#!/usr/bin/python3
+MyClass = __import__('8-my_class_2').MyClass
+class_to_json = __import__('8-class_to_json').class_to_json
+
+m = MyClass("John")
+m.win()
+print(type(m))
+print(m)
+
+mj = class_to_json(m)
+print(type(mj))
+print(mj)
+
+guillaume@ubuntu:~/0x0B$ ./8-main_2.py 
+<class '8-my_class_2.MyClass'>
+[MyClass] John - 4 => 1
+<class 'dict'>
+{'number': 4, '_MyClass__name': 'John', 'is_team_red': True, 'score': 1}
+guillaume@ubuntu:~/0x0B$
+
+```
+
+No test cases Needed
+
+Repo:
+
+GitHub repository: `alx-higher_level_programming`
+Directory: `0x0B-python-input_output`
+File: `8-class_to_json.py`
+
+### 9. Student to JSON
+
+Write a class `Student` that defines a student by:
+
+* Public instance attributes:
+
+- `first_name`
+- `last_name`
+- `age`
+
+- Instantiation with `first_name`, `last_name` and `age`: `def __init__(self, first_name, last_name, age):`
+- Public method `def to_json(self):` that retrieves a dictionary representation of a `Student` instance (same as `8-class_to_json.py`)
+- You are not allowed to import any module
+
+```
+guillaume@ubuntu:~/0x0B$ cat 9-main.py 
+#!/usr/bin/python3
+Student = __import__('9-student').Student
+
+students = [Student("John", "Doe", 23), Student("Bob", "Dylan", 27)]
+
+for student in students:
+    j_student = student.to_json()
+    print(type(j_student))
+    print(j_student['first_name'])
+    print(type(j_student['first_name']))
+    print(j_student['age'])
+    print(type(j_student['age']))
+
+guillaume@ubuntu:~/0x0B$ ./9-main.py 
+<class 'dict'>
+John
+<class 'str'>
+23
+<class 'int'>
+<class 'dict'>
+Bob
+<class 'str'>
+27
+<class 'int'>
+guillaume@ubuntu:~/0x0B$
+
+```
+
+No test cases needed
+
+Repo:
+
+- GitHub repository: `alx-higher_level_programming`
+- Directory: `0x0B-python-input_output`
+- File: `9-student.py`
+
+### 10. Student to JSON with filter
+
+Write a class `Student` that defines a student by: (based on `9-student.py`)
+
+* Public instance attributes:
+
+- `first_name`
+- `last_name`
+- `age`
+
+- Instantiation with `first_name`, `last_name` and `age`: `def __init__(self, first_name, last_name, age):`
+* Public method `def to_json(self, attrs=None):` that retrieves a dictionary representation of a `Student` instance (same as `8-class_to_json.py`):
+ - If `attrs` is a list of strings, only attribute names contained in this list must be retrieved.
+ - Otherwise, all attributes must be retrieved
+- You are not allowed to import any module
+
+```
+guillaume@ubuntu:~/0x0B$ cat 10-main.py 
+#!/usr/bin/python3
+Student = __import__('10-student').Student
+
+student_1 = Student("John", "Doe", 23)
+student_2 = Student("Bob", "Dylan", 27)
+
+j_student_1 = student_1.to_json()
+j_student_2 = student_2.to_json(['first_name', 'age'])
+j_student_3 = student_2.to_json(['middle_name', 'age'])
+
+print(j_student_1)
+print(j_student_2)
+print(j_student_3)
+
+guillaume@ubuntu:~/0x0B$ ./10-main.py 
+{'age': 23, 'last_name': 'Doe', 'first_name': 'John'}
+{'age': 27, 'first_name': 'Bob'}
+{'age': 27}
+guillaume@ubuntu:~/0x0B$
+
+```
+
+No test cases Needed
+
+Repo:
+
+GitHub repository: `alx-higher_level_programming`
+Directory: `0x0B-python-input_output`
+File: `10-student.py`
+
