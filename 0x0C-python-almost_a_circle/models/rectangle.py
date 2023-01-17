@@ -107,18 +107,17 @@ class Rectangle(Base):
 
         return rectangle + rec_id + rect_xy + rec_wh
 
-    def update(self, *args, **kwargs):
-        """ updating class rectangle that assigns an argument"""
-        count = 0
-        if args is not None and len(args) != 0:
-            list_arguments = ["id", "width", "height", "x", "y"]
+    def display(self):
+        """Print the Rectangle using the `#` character."""
+        if self.width == 0 or self.height == 0:
+            print("")
+            return
 
-            for values in args:
-                setattr(self, list_arguments[count], values)
-                count += 1
-        else:
-            for key, value in kwargs.items():
-                setattr(self, key, value)
+        [print("") for y in range(self.y)]
+        for h in range(self.height):
+            [print(" ", end="") for x in range(self.x)]
+            [print("#", end="") for w in range(self.width)]
+            print("")
 
     def to_dictionary(self):
         """method that returns a dictionary representation of a rectangle"""
