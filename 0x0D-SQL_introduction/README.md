@@ -171,6 +171,12 @@ guillaume@ubuntu:~/$
 
  Done? Help Check your code Get a sandbox
 
+### How to Import Tables to a New Database using Queries from a file
+
+```
+mysql -u root -p hbtn_0c_0 < temperatures.sql
+```
+
 ### 1\. Create a database
 
 mandatory
@@ -722,6 +728,12 @@ guillaume@ubuntu:~/$
 
 # advanced
 
+#### How to Import Tables to a New Database using Queries from a file
+
+```
+mysql -u root -p hbtn_0c_0 < temperatures.sql
+```
+
 Import in `hbtn_0c_0` database this table dump: [download](https://s3.amazonaws.com/intranet-projects-files/holbertonschool-higher-level_programming+/272/temperatures.sql "download")
 
 Write a script that displays the average temperature (Fahrenheit) by city ordered by temperature (descending).
@@ -765,6 +777,12 @@ guillaume@ubuntu:~/$
 
 # advanced
 
+#### How to Import Tables to a New Database using Queries from a file
+
+```
+mysql -u root -p hbtn_0c_0 < temperatures.sql
+```
+
 Import in `hbtn_0c_0` database this table dump: [download](https://s3.amazonaws.com/intranet-projects-files/holbertonschool-higher-level_programming+/272/temperatures.sql "download") (same as `Temperatures #0`)
 
 Write a script that displays the top 3 of cities temperature during July and August ordered by temperature (descending)
@@ -791,6 +809,12 @@ guillaume@ubuntu:~/$
 ### 20\. Temperatures #2
 
 # advanced
+
+#### How to Import Tables to a New Database using Queries from a file
+
+```
+mysql -u root -p hbtn_0c_0 < temperatures.sql
+```
 
 Import in `hbtn_0c_0` database this table dump: [download](https://s3.amazonaws.com/intranet-projects-files/holbertonschool-higher-level_programming+/272/temperatures.sql "download") (same as `Temperatures #0`)
 
