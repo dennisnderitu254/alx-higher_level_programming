@@ -589,6 +589,12 @@ mandatory
 
 Score: 0.00% (Checks completed: 0.00%)
 
+#### How to Import Tables to a New Database using Queries from a file
+
+```
+mysql -u root -p hbtn_0d_tvshows < hbtn_0d_tvshows.sql
+```
+
 Import the database dump from `hbtn_0d_tvshows` to your MySQL server: [download](https://s3.amazonaws.com/intranet-projects-files/holbertonschool-higher-level_programming+/274/hbtn_0d_tvshows.sql "download")
 
 Write a script that lists all shows contained in `hbtn_0d_tvshows` that have at least one genre linked.
@@ -638,6 +644,12 @@ guillaume@ubuntu:~/$
 mandatory
 
 Score: 0.00% (Checks completed: 0.00%)
+
+#### How to Import Tables to a New Database using Queries from a file
+
+```
+mysql -u root -p hbtn_0d_tvshows < hbtn_0d_tvshows.sql
+```
 
 Import the database dump of `hbtn_0d_tvshows` to your MySQL server: [download](https://s3.amazonaws.com/intranet-projects-files/holbertonschool-higher-level_programming+/274/hbtn_0d_tvshows.sql "download") (same as `10-genre_id_by_show.sql`)
 
@@ -692,6 +704,12 @@ mandatory
 
 Score: 0.00% (Checks completed: 0.00%)
 
+#### How to Import Tables to a New Database using Queries from a file
+
+```
+mysql -u root -p hbtn_0d_tvshows < hbtn_0d_tvshows.sql
+```
+
 Import the database dump from `hbtn_0d_tvshows` to your MySQL server: [download](https://s3.amazonaws.com/intranet-projects-files/holbertonschool-higher-level_programming+/274/hbtn_0d_tvshows.sql "download") (same as `11-genre_id_all_shows.sql`)
 
 Write a script that lists all shows contained in `hbtn_0d_tvshows` without a genre linked.
@@ -724,6 +742,12 @@ guillaume@ubuntu:~/$
 mandatory
 
 Score: 0.00% (Checks completed: 0.00%)
+
+#### How to Import Tables to a New Database using Queries from a file
+
+```
+mysql -u root -p hbtn_0d_tvshows < hbtn_0d_tvshows.sql
+```
 
 Import the database dump from `hbtn_0d_tvshows` to your MySQL server: [download](https://s3.amazonaws.com/intranet-projects-files/holbertonschool-higher-level_programming+/274/hbtn_0d_tvshows.sql "download") (same as `12-no_genre.sql`)
 
@@ -767,6 +791,12 @@ mandatory
 
 Score: 0.00% (Checks completed: 0.00%)
 
+#### How to Import Tables to a New Database using Queries from a file
+
+```
+mysql -u root -p hbtn_0d_tvshows < hbtn_0d_tvshows.sql
+```
+
 Import the database dump from `hbtn_0d_tvshows` to your MySQL server: [download](https://s3.amazonaws.com/intranet-projects-files/holbertonschool-higher-level_programming+/274/hbtn_0d_tvshows.sql "download") (same as `13-count_shows_by_genre.sql`)
 
 Write a script that uses the `hbtn_0d_tvshows` database to lists all genres of the show `Dexter`.
@@ -804,6 +834,12 @@ mandatory
 
 Score: 0.00% (Checks completed: 0.00%)
 
+#### How to Import Tables to a New Database using Queries from a file
+
+```
+mysql -u root -p hbtn_0d_tvshows < hbtn_0d_tvshows.sql
+```
+
 Import the database dump from `hbtn_0d_tvshows` to your MySQL server: [download](https://s3.amazonaws.com/intranet-projects-files/holbertonschool-higher-level_programming+/274/hbtn_0d_tvshows.sql "download") (same as `14-my_genres.sql`)
 
 Write a script that lists all Comedy shows in the database `hbtn_0d_tvshows`.
@@ -839,6 +875,12 @@ guillaume@ubuntu:~/$
 mandatory
 
 Score: 0.00% (Checks completed: 0.00%)
+
+#### How to Import Tables to a New Database using Queries from a file
+
+```
+mysql -u root -p hbtn_0d_tvshows < hbtn_0d_tvshows.sql
+```
 
 Import the database dump from `hbtn_0d_tvshows` to your MySQL server: [download](https://s3.amazonaws.com/intranet-projects-files/holbertonschool-higher-level_programming+/274/hbtn_0d_tvshows.sql "download") (same as `15-comedy_only.sql`)
 
