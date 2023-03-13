@@ -1,7 +1,7 @@
 0x12. JavaScript - Warm up
 ==========================
 
-- By Guillaume
+- By Dev Nderitu
 - Weight: 1
 
 Background Context
