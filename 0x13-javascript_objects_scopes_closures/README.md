@@ -585,7 +585,7 @@ guillaume@ubuntu:~/0x13$
 
 Write a script that imports a dictionary of occurrences by user id and computes a dictionary of user ids by occurrence.
 
-- Your script must import dict from the file 101-data.js
+- Your script must import `dict` from the file `101-data.js`
 - In the new dictionary:
   - A key is a number of occurrences
   - A value is the list of user ids
@@ -612,3 +612,29 @@ guillaume@ubuntu:~/0x13$
 - GitHub repository: `alx-higher_level_programming`
 - Directory: `0x13-javascript_objects_scopes_closures`
 - File: `101-sorted.js`
+
+### 13. Concat files
+
+Write a script that concats 2 files.
+
+- The first argument is the file path of the first source file
+- The second argument is the file path of the second source file
+- The third argument is the file path of the destination
+
+```
+guillaume@ubuntu:~/0x13$ cat fileA
+C is fun!
+guillaume@ubuntu:~/0x13$ cat fileB
+Python is Cool!!!
+guillaume@ubuntu:~/0x13$ ./102-concat.js fileA fileB fileC
+guillaume@ubuntu:~/0x13$ cat fileC
+C is fun!
+Python is Cool!!!
+guillaume@ubuntu:~/0x13$
+```
+
+**Repo:**
+
+- GitHub repository: `alx-higher_level_programming`
+- Directory: `0x13-javascript_objects_scopes_closures`
+- File: `102-concat.js`
