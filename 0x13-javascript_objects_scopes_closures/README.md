@@ -580,3 +580,35 @@ guillaume@ubuntu:~/0x13$
 - GitHub repository: `alx-higher_level_programming`
 - Directory: `0x13-javascript_objects_scopes_closures`
 - File: `100-map.js`
+
+### 12. Sorted occurences
+
+Write a script that imports a dictionary of occurrences by user id and computes a dictionary of user ids by occurrence.
+
+- Your script must import dict from the file 101-data.js
+- In the new dictionary:
+  - A key is a number of occurrences
+  - A value is the list of user ids
+- Print the new dictionary at the end
+
+```
+guillaume@ubuntu:~/0x13$ cat 101-data.js
+#!/usr/bin/node
+exports.dict = {
+  89: 1,
+  90: 2,
+  91: 1,
+  92: 3,
+  93: 1,
+  94: 2
+};
+guillaume@ubuntu:~/0x13$ ./101-sorted.js
+{ '1': [ '89', '91', '93' ], '2': [ '90', '94' ], '3': [ '92' ] }
+guillaume@ubuntu:~/0x13$
+```
+
+**Repo:**
+
+- GitHub repository: `alx-higher_level_programming`
+- Directory: `0x13-javascript_objects_scopes_closures`
+- File: `101-sorted.js`
