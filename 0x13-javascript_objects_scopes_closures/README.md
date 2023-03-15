@@ -555,3 +555,28 @@ guillaume@ubuntu:~/0x13$
 - GitHub repository: `alx-higher_level_programming`
 - Directory: `0x13-javascript_objects_scopes_closures`
 - File: `10-converter.js`
+
+### 11. Factor index
+
+Write a script that imports an array and computes a new array.
+
+- Your script must import `list` from the file `100-data.js`
+- You must use a `map`. [Tips](https://intranet.alxswe.com/rltoken/LOEW51ZbYDjO4KZCFevzNQ)
+- A new list must be created with each value equal to the value of the initial list, multipled by the index in the list
+- Print both the initial list and the new list
+
+```
+guillaume@ubuntu:~/0x13$ cat 100-data.js
+#!/usr/bin/node
+exports.list = [1, 2, 3, 4, 5];
+guillaume@ubuntu:~/0x13$ ./100-map.js
+[ 1, 2, 3, 4, 5 ]
+[ 0, 2, 6, 12, 20 ]
+guillaume@ubuntu:~/0x13$
+```
+
+**Repo:**
+
+- GitHub repository: `alx-higher_level_programming`
+- Directory: `0x13-javascript_objects_scopes_closures`
+- File: `100-map.js`
