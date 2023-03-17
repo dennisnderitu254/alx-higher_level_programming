@@ -226,7 +226,7 @@ INSERT INTO states (name) VALUES ("California"), ("Arizona"), ("Texas"), ("New Y
 
 guillaume@ubuntu:~/0x0F$ cat 0-select_states.sql | mysql -uroot -p
 Enter password:
-guillaume@ubuntu:~/0x0F$ ./1-filter_states.py root root hbtn_0e_0_usa
+guillaume@ubuntu:~/0x0F$ ./1-filter_states.py root db-password hbtn_0e_0_usa
 (4, 'New York')
 (5, 'Nevada')
 guillaume@ubuntu:~/0x0F$
@@ -271,7 +271,7 @@ INSERT INTO states (name) VALUES ("California"), ("Arizona"), ("Texas"), ("New Y
 
 guillaume@ubuntu:~/0x0F$ cat 0-select_states.sql | mysql -uroot -p
 Enter password:
-guillaume@ubuntu:~/0x0F$ ./2-my_filter_states.py root root hbtn_0e_0_usa 'Arizona'
+guillaume@ubuntu:~/0x0F$ ./2-my_filter_states.py root db-password hbtn_0e_0_usa 'Arizona'
 (2, 'Arizona')
 guillaume@ubuntu:~/0x0F$
 
@@ -296,7 +296,7 @@ Wait, do you remember the previous task? Did you test `"Arizona'; TRUNCATE TABL
 ```
 guillaume@ubuntu:~/0x0F$ ./2-my_filter_states.py root root hbtn_0e_0_usa "Arizona'; TRUNCATE TABLE states ; SELECT * FROM states WHERE name = '"
 (2, 'Arizona')
-guillaume@ubuntu:~/0x0F$ ./0-select_states.py root root hbtn_0e_0_usa
+guillaume@ubuntu:~/0x0F$ ./0-select_states.py root db-password hbtn_0e_0_usa
 guillaume@ubuntu:~/0x0F$
 
 ```
@@ -328,7 +328,7 @@ INSERT INTO states (name) VALUES ("California"), ("Arizona"), ("Texas"), ("New Y
 
 guillaume@ubuntu:~/0x0F$ cat 0-select_states.sql | mysql -uroot -p
 Enter password:
-guillaume@ubuntu:~/0x0F$ ./3-my_safe_filter_states.py root root hbtn_0e_0_usa 'Arizona'
+guillaume@ubuntu:~/0x0F$ ./3-my_safe_filter_states.py root db-password hbtn_0e_0_usa 'Arizona'
 (2, 'Arizona')
 guillaume@ubuntu:~/0x0F$
 
@@ -385,7 +385,7 @@ INSERT INTO cities (state_id, name) VALUES (5, "Las Vegas"), (5, "Reno"), (5, "H
 
 guillaume@ubuntu:~/0x0F$ cat 4-cities_by_state.sql | mysql -uroot -p
 Enter password:
-guillaume@ubuntu:~/0x0F$ ./4-cities_by_state.py root root hbtn_0e_4_usa
+guillaume@ubuntu:~/0x0F$ ./4-cities_by_state.py root db-password hbtn_0e_4_usa
 (1, 'San Francisco', 'California')
 (2, 'San Jose', 'California')
 (3, 'Los Angeles', 'California')
@@ -454,13 +454,13 @@ INSERT INTO cities (state_id, name) VALUES (3, "Dallas"), (3, "Houston"), (3, "A
 INSERT INTO cities (state_id, name) VALUES (4, "New York");
 INSERT INTO cities (state_id, name) VALUES (5, "Las Vegas"), (5, "Reno"), (5, "Henderson"), (5, "Carson City");
 
-guillaume@ubuntu:~/0x0F$ ./5-filter_cities.py root root hbtn_0e_4_usa Texas
+guillaume@ubuntu:~/0x0F$ ./5-filter_cities.py root db-password hbtn_0e_4_usa Texas
 
 guillaume@ubuntu:~/0x0F$ cat 4-cities_by_state.sql | mysql -uroot -p
 Enter password:
-guillaume@ubuntu:~/0x0F$ ./5-filter_cities.py root root hbtn_0e_4_usa Texas
+guillaume@ubuntu:~/0x0F$ ./5-filter_cities.py root db-password hbtn_0e_4_usa Texas
 Dallas, Houston, Austin
-guillaume@ubuntu:~/0x0F$ ./5-filter_cities.py root root hbtn_0e_4_usa Hawaii
+guillaume@ubuntu:~/0x0F$ ./5-filter_cities.py root db-password hbtn_0e_4_usa Hawaii
 
 guillaume@ubuntu:~/0x0F$
 
@@ -516,7 +516,7 @@ if __name__ == "__main__":
     engine = create_engine('mysql+mysqldb://{}:{}@localhost/{}'.format(sys.argv[1], sys.argv[2], sys.argv[3]), pool_pre_ping=True)
     Base.metadata.create_all(engine)
 
-guillaume@ubuntu:~/0x0F$ ./6-model_state.py root root hbtn_0e_6_usa
+guillaume@ubuntu:~/0x0F$ ./6-model_state.py root db-password hbtn_0e_6_usa
 guillaume@ubuntu:~/0x0F$ cat 6-model_state.sql | mysql -uroot -p
 Enter password:
 Table   Create Table
@@ -556,7 +556,7 @@ INSERT INTO states (name) VALUES ("California"), ("Arizona"), ("Texas"), ("New Y
 
 guillaume@ubuntu:~/0x0F$ cat 7-model_state_fetch_all.sql | mysql -uroot -p hbtn_0e_6_usa
 Enter password:
-guillaume@ubuntu:~/0x0F$ ./7-model_state_fetch_all.py root root hbtn_0e_6_usa
+guillaume@ubuntu:~/0x0F$ ./7-model_state_fetch_all.py root db-password hbtn_0e_6_usa
 1: California
 2: Arizona
 3: Texas
@@ -593,7 +593,7 @@ Write a script that prints the first `State` object from the database `hbtn_0
 - Your code should not be executed when imported
 
 ```
-guillaume@ubuntu:~/0x0F$ ./8-model_state_fetch_first.py root root hbtn_0e_6_usa
+guillaume@ubuntu:~/0x0F$ ./8-model_state_fetch_first.py root db-password hbtn_0e_6_usa
 1: California
 guillaume@ubuntu:~/0x0F$
 
@@ -624,7 +624,7 @@ Write a script that lists all `State` objects that contain the letter `a` fr
 - Your code should not be executed when imported
 
 ```
-guillaume@ubuntu:~/0x0F$ ./9-model_state_filter_a.py root root hbtn_0e_6_usa
+guillaume@ubuntu:~/0x0F$ ./9-model_state_filter_a.py root db-password hbtn_0e_6_usa
 1: California
 2: Arizona
 3: Texas
@@ -659,9 +659,9 @@ Write a script that prints the `State` object with the `name` passed as argu
 - Your code should not be executed when imported
 
 ```
-guillaume@ubuntu:~/0x0F$ ./10-model_state_my_get.py root root hbtn_0e_6_usa Texas
+guillaume@ubuntu:~/0x0F$ ./10-model_state_my_get.py root db-password hbtn_0e_6_usa Texas
 3
-guillaume@ubuntu:~/0x0F$ ./10-model_state_my_get.py root root hbtn_0e_6_usa Illinois
+guillaume@ubuntu:~/0x0F$ ./10-model_state_my_get.py root db-password hbtn_0e_6_usa Illinois
 Not found
 guillaume@ubuntu:~/0x0F$
 
@@ -691,9 +691,9 @@ Write a script that adds the `State` object "Louisiana" to the database `hbtn
 - Your code should not be executed when imported
 
 ```
-guillaume@ubuntu:~/0x0F$ ./11-model_state_insert.py root root hbtn_0e_6_usa
+guillaume@ubuntu:~/0x0F$ ./11-model_state_insert.py root db-password hbtn_0e_6_usa
 6
-guillaume@ubuntu:~/0x0F$ ./7-model_state_fetch_all.py root root hbtn_0e_6_usa
+guillaume@ubuntu:~/0x0F$ ./7-model_state_fetch_all.py root db-password hbtn_0e_6_usa
 1: California
 2: Arizona
 3: Texas
@@ -728,8 +728,8 @@ Write a script that changes the name of a `State` object from the database `h
 - Your code should not be executed when imported
 
 ```
-guillaume@ubuntu:~/0x0F$ ./12-model_state_update_id_2.py root root hbtn_0e_6_usa
-guillaume@ubuntu:~/0x0F$ ./7-model_state_fetch_all.py root root hbtn_0e_6_usa
+guillaume@ubuntu:~/0x0F$ ./12-model_state_update_id_2.py root db-password hbtn_0e_6_usa
+guillaume@ubuntu:~/0x0F$ ./7-model_state_fetch_all.py root db-password hbtn_0e_6_usa
 1: California
 2: New Mexico
 3: Texas
@@ -763,8 +763,8 @@ Write a script that deletes all `State` objects with a name containing the let
 - Your code should not be executed when imported
 
 ```
-guillaume@ubuntu:~/0x0F$ ./13-model_state_delete_a.py root root hbtn_0e_6_usa
-guillaume@ubuntu:~/0x0F$ ./7-model_state_fetch_all.py root root hbtn_0e_6_usa
+guillaume@ubuntu:~/0x0F$ ./13-model_state_delete_a.py root db-password hbtn_0e_6_usa
+guillaume@ubuntu:~/0x0F$ ./7-model_state_fetch_all.py root db-password hbtn_0e_6_usa
 2: New Mexico
 4: New York
 guillaume@ubuntu:~/0x0F$
@@ -833,7 +833,7 @@ INSERT INTO cities (state_id, name) VALUES (5, "Las Vegas"), (5, "Reno"), (5, "H
 
 guillaume@ubuntu:~/0x0F$ cat 14-model_city_fetch_by_state.sql | mysql -uroot -p
 Enter password:
-guillaume@ubuntu:~/0x0F$ ./14-model_city_fetch_by_state.py root root hbtn_0e_14_usa
+guillaume@ubuntu:~/0x0F$ ./14-model_city_fetch_by_state.py root db-password hbtn_0e_14_usa
 California: (1) San Francisco
 California: (2) San Jose
 California: (3) Los Angeles
@@ -965,7 +965,7 @@ INSERT INTO cities (state_id, name) VALUES (4, "New York");
 INSERT INTO cities (state_id, name) VALUES (5, "Las Vegas"), (5, "Reno"), (5, "Henderson"), (5, "Carson City");
 
 guillaume@ubuntu:~/0x0F$ cat 101-relationship_states_cities_list.sql | mysql -uroot -p
-guillaume@ubuntu:~/0x0F$ ./101-relationship_states_cities_list.py root root hbtn_0e_101_usa
+guillaume@ubuntu:~/0x0F$ ./101-relationship_states_cities_list.py root db-password hbtn_0e_101_usa
 1: California
     1: San Francisco
     2: San Jose
@@ -1023,7 +1023,7 @@ Write a script that lists all `City` objects from the database `hbtn_0e_101_u
 ```
 
 ```
-guillaume@ubuntu:~/0x0F$ ./102-relationship_cities_states_list.py root root hbtn_0e_101_usa
+guillaume@ubuntu:~/0x0F$ ./102-relationship_cities_states_list.py root db-password hbtn_0e_101_usa
 1: San Francisco -> California
 2: San Jose -> California
 3: Los Angeles -> California
