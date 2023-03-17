@@ -15,7 +15,7 @@ if __name__ == '__main__':
 
     # Connect to MySQL database
     try:
-        db = MYSQLdb.connect(
+        db = MySQLdb.connect(
             user=sys.argv[1], passwd=sys.argv[2], db=sys.argv[3])
     except MySQLdb.Error as e:
         print(f"Error connecting to database: {e}")
