@@ -16,6 +16,7 @@ from model_state import State
 # 3. Querying the database for the first State object
 # 4. Printing the id and name of the first State object
 # 5. If there is no State object, print “Nothing”
+
 if __name__ == "__main__":
     engine = create_engine("mysql+mysqldb://{}:{}@localhost/{}".format(
         sys.argv[1], sys.argv[2], sys.argv[3]),
